@@ -9,7 +9,7 @@ import './Navbar.scss'
 
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false)
-	const navMenu = ['home', 'about', 'contact', 'work', 'skills']
+	const navMenu = ['home', 'about', 'work', 'skills', 'testimonials', 'contact']
 	return (
 		<nav className='app__navbar'>
 			<div className='app__navbar-logo'>
