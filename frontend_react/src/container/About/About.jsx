@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
 import { client, urlFor } from '../../client'
+import AppWrap from '../../wrapper/AppWrap'
 
 import './About.scss'
 
@@ -48,4 +49,4 @@ const About = () => {
 	)
 }
 
-export default About
+export default AppWrap(About, 'about')
