@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 
 import { client, urlFor } from '../../client'
 import AppWrap from '../../wrapper/AppWrap'
+import MotionWrapper from '../../wrapper/MotionWrapper'
 
 import './Skills.scss'
 
@@ -78,4 +79,8 @@ const Skills = () => {
 	)
 }
 
-export default AppWrap(Skills, 'skills')
+export default AppWrap(
+	MotionWrapper(Skills, 'app__skills'),
+	'skills',
+	'app__whitebg'
+)

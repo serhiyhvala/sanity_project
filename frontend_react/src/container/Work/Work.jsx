@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid'
 
 import { client, urlFor } from '../../client'
 import AppWrap from '../../wrapper/AppWrap'
+import MotionWrapper from '../../wrapper/MotionWrapper'
 
 import './Work.scss'
 
@@ -113,4 +114,8 @@ const Work = () => {
 	)
 }
 
-export default AppWrap(Work, 'work')
+export default AppWrap(
+	MotionWrapper(Work, 'app__works'),
+	'work',
+	'app__primarybg'
+)
